@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OIS Market — Личный кабинет</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400,italic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://kit.fontawesome.com/4e9c8e4e7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Бургер вне сайдбара! -->
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="dashboard-container">
+    <aside class="sidebar animate-fadein" id="sidebar">
+      <div class="sidebar-header">
+        <img src="https://placehold.co/80x80" alt="Аватар" class="avatar">
+        <div class="user-info">
+          <div class="user-name">Иван Иванов</div>
+          <div class="user-role">Партнёр</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav" id="sidebarNav">
+        <a href="#" class="active"><i class="fas fa-home"></i> Главная</a>
+        <a href="#"><i class="fas fa-wallet"></i> Баланс</a>
+        <a href="#"><i class="fas fa-graduation-cap"></i> Обучение</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Выйти</a>
+      </nav>
+    </aside>
+    <main class="dashboard-main">
+      <header class="dashboard-header animate-slidein">
+        <div class="dashboard-title">Добро пожаловать, Иван!</div>
+        <div class="dashboard-actions">
+          <a href="#" class="action-btn"><i class="fas fa-bell"></i></a>
+          <a href="#" class="action-btn"><i class="fas fa-question-circle"></i></a>
+        </div>
+      </header>
+      <section class="dashboard-widgets">
+        <div class="widget animate-pop"><div class="widget-title">Баланс</div><div class="widget-value">12 500 ₽</div></div>
+        <div class="widget animate-pop" style="animation-delay:0.1s"><div class="widget-title">Продажи</div><div class="widget-value">8</div></div>
+        <div class="widget animate-pop" style="animation-delay:0.2s"><div class="widget-title">Заработано за месяц</div><div class="widget-value">3 200 ₽</div></div>
+      </section>
+      <section class="dashboard-content animate-fadein" style="animation-delay:0.3s">
+        <h2>Моя статистика</h2>
+        <p>Здесь будет подробная статистика по вашей команде, доходу и активности.</p>
+      </section>
+    </main>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
